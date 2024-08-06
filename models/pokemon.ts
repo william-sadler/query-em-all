@@ -5,6 +5,7 @@ export interface PokemonGeneration {
   name: string
   names?: Name[]
   pokemon_species: ApiLink[]
+  results: Result[]
   types?: ApiLink[]
   version_groups?: ApiLink[]
 }
@@ -22,6 +23,9 @@ export interface ApiLink {
 export interface Pokemon {
   name: string
   id: number
+  species: Result
+  height: number
+  weight: number
   sprites: {
     front_default: string
     back_default: string
@@ -48,6 +52,13 @@ interface TypeInfo {
 
 export interface SearchResults {
   results: Result[]
+}
+export interface PokemonSpecies {
+  genera: Genera[]
+}
+export interface Genera {
+  genus: string
+  Language: Result
 }
 
 export interface Result {
