@@ -6,7 +6,7 @@ Practice writing queries with React Query and displaying loading states, error s
 
 ### 0. Cloning and installation
 
-- [ ] Clone this repo, navigate to it, install packages, and start the server with `npm run dev`
+- [x] Clone this repo, navigate to it, install packages, and start the server with `npm run dev`
   <details style="padding-left: 2em">
     <summary>Tip</summary>
 
@@ -31,19 +31,19 @@ Visit [localhost:5173/](http://localhost:5173/) and [localhost:5173/pokemon/bulb
 
 ### 2. Setting up React Query
 
-- [ ] Install React Query and React Query Devtools
+- [x] Install React Query and React Query Devtools
 
 ```sh
 npm i -D @tanstack/react-query @tanstack/react-query-devtools
 ```
 
-- [ ] In `client/index.tsx` import `{ QueryClient, QueryClientProvider }` from `@tanstack/react-query`
+- [x] In `client/index.tsx` import `{ QueryClient, QueryClientProvider }` from `@tanstack/react-query`
 
-- [ ] In `client/index.tsx` import `{ ReactQueryDevtools }` from `@tanstack/react-query-devtools`
+- [x] In `client/index.tsx` import `{ ReactQueryDevtools }` from `@tanstack/react-query-devtools`
 
-- [ ] Create a new `QueryClient` instance and wrap the `<RouterProvider />` component in a `<QueryClientProvider>` component, passing the `QueryClient` instance as a prop
+- [x] Create a new `QueryClient` instance and wrap the `<RouterProvider />` component in a `<QueryClientProvider>` component, passing the `QueryClient` instance as a prop
 
-- [ ] Within the `QueryClient` instance, add in the `<ReactQueryDevtools />` component.
+- [x] Within the `QueryClient` instance, add in the `<ReactQueryDevtools />` component.
 
   <details style="padding-left: 2em">
     <summary>Tip</summary>
@@ -73,7 +73,7 @@ npm i -D @tanstack/react-query @tanstack/react-query-devtools
 
 ### 1. Fetching a list of Pokémon from the API
 
-- [ ] As a user, I want to see a list of the first generation of Pokémon so that I can see what Pokémon there are
+- [x] As a user, I want to see a list of the first generation of Pokémon so that I can see what Pokémon there are
 
   - In `<PokemonList>` use `useQuery` and `fetchPokemonGeneration` to render a list of Pokémon (just the names)
     <details style="padding-left: 2em">
@@ -88,7 +88,7 @@ npm i -D @tanstack/react-query @tanstack/react-query-devtools
 
 ### 2. Adding a loading state
 
-- [ ] As a user, I want to see a loading state while the list of Pokémon is being fetched so that I know something is happening
+- [x] As a user, I want to see a loading state while the list of Pokémon is being fetched so that I know something is happening
 <details style="padding-left: 2em">
   <summary>More about loading states</summary>
   
@@ -98,7 +98,7 @@ npm i -D @tanstack/react-query @tanstack/react-query-devtools
 
 ### 3. Adding an error state
 
-- [ ] As a user, if something goes wrong while fetching the list of Pokémon, I want to see an error state so that I know something went wrong
+- [x] As a user, if something goes wrong while fetching the list of Pokémon, I want to see an error state so that I know something went wrong
   <details style="padding-left: 2em">
     <summary>More about error states</summary>
 
@@ -108,7 +108,7 @@ npm i -D @tanstack/react-query @tanstack/react-query-devtools
 
 ### 4. Fetching a single Pokémon
 
-- [ ] As a user, when I click on a Pokémon in the list, I want to see more information about that Pokémon so that I can learn more about it
+- [x] As a user, when I click on a Pokémon in the list, I want to see more information about that Pokémon so that I can learn more about it
 
   - In `<PokemonList>`, add a `<Link>` to each Pokémon that links to `/pokemon/:name`, where `:name` is the name of the Pokémon, note: the URL should be the lowercase name of the Pokémon (e.g. `/pokemon/bulbasaur`)
   - In `<PokemonDetail>`, use `useQuery` and `fetchPokemonByName` to render the Pokémon's name, image, and types
@@ -122,7 +122,7 @@ npm i -D @tanstack/react-query @tanstack/react-query-devtools
 
 ### 5. Adding more data to `<PokemonDetail>`
 
-- [ ] As a user, I want to see more information about the Pokémon so that I can learn more about it
+- [x] As a user, I want to see more information about the Pokémon so that I can learn more about it
   - In `<PokemonDetail>`, use `console.log` to see what the _actual_ API is returning
   - Choose some fields and add them to the `Pokemon` type in `models/pokemon.ts`
   - In `<PokemonDetail>`, render those new fields in some way of your choosing
@@ -134,9 +134,9 @@ npm i -D @tanstack/react-query @tanstack/react-query-devtools
 <details>
   <summary>More about stretch challenges</summary>
 
-- [ ] As a user, on the homepage (`/`) I want to see a list of all the generations, so that I can click on one, go to `/generations/:generationId` and see the list of Pokémon for that generation
+- [x] As a user, on the homepage (`/`) I want to see a list of all the generations, so that I can click on one, go to `/generations/:generationId` and see the list of Pokémon for that generation
 
-- [ ] As a user, I want to see a search bar at the top of the page, so that I can search for a Pokémon by name, when I hit enter, I want to be taken to `/search?name=pokemonName`, which should display a filtered list of Pokémon
+- [x] As a user, I want to see a search bar at the top of the page, so that I can search for a Pokémon by name, when I hit enter, I want to be taken to `/search?name=pokemonName`, which should display a filtered list of Pokémon
 
 </details>
 
