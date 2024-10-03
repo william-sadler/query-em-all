@@ -1,6 +1,23 @@
 # Query 'Em All
 
-**Query 'Em All** is a dynamic Pokedex application that allows users to explore Pokémon data using the [Pokémon API](https://pokeapi.co). This project focuses on practicing queries with React Query, handling loading and error states, and displaying data effectively.
+**Query 'Em All** is a dynamic Pokedex application that lets users explore Pokémon data using the [Pokémon API](https://pokeapi.co). This project was developed to practice using React Query, handling loading and error states, and effectively displaying data with a visually appealing design.
+
+## Features
+
+- **Search Functionality**: 
+  - Search for Pokémon by name with autocomplete suggestions.
+  - Search by Pokémon ID for quick access.
+- **Feeling Lucky Button**: Click to be redirected to a random Pokémon for surprise exploration.
+- **Region Navigation**: 
+  - Landing page displays a list of Pokémon regions for easy navigation.
+  - Clickable links to view Pokémon categorized by generation/region.
+- **Stylized Pokémon Cards**: 
+  - Each Pokémon card showcases detailed information, including:
+    - Typing
+    - Up to four possible moves
+    - Weight and height
+    - Species
+  - Includes animated pixel art at the top and official artwork in the center.
 
 ## Setup
 
@@ -23,8 +40,8 @@
 - **`client/apis/pokemon.ts`**: API interaction logic (already set up).
 - **`models/pokemon.ts`**: Type definitions for Pokémon data.
 - **Routes**:
-  - `/`: Displays a list of Regions.
-  - `generation/:region`: Displays a list of Pokémon from that region.
+  - `/`: Displays a list of Pokémon regions.
+  - `generation/:region`: Displays a list of Pokémon from the selected region.
   - `/pokemon/:name`: Displays details for a selected Pokémon.
 
 ### Setting Up React Query
@@ -47,24 +64,17 @@
    );
    ```
 
-## Features
-
-- **Fetching Pokémon**: Display lists of Pokémon by generation.
-- **Loading States**: Show a loading spinner while fetching data.
-- **Error Handling**: Display error messages if data fetching fails.
-- **Detailed Views**: Access detailed information about individual Pokémon.
-
 ## Challenges Implemented
 
 1. Fetching a list of Pokémon from the API.
-2. Adding loading and error states.
-3. Fetching details for a single Pokémon.
-4. Enhancing Pokémon detail views with additional data.
+2. Implementing loading and error states for user feedback.
+3. Fetching detailed information for individual Pokémon.
+4. Enhancing detail views to include additional Pokémon data.
 
 ## Stretch Goals
 
-- Implement navigation to view Pokémon by generation.
-- Add a search bar to filter Pokémon by name.
+- Navigation to view Pokémon by generation.
+- Enhanced search functionality to filter Pokémon by name.
 
 ## Submitting this Challenge for Marking
 
