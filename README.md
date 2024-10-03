@@ -23,7 +23,8 @@
 - **`client/apis/pokemon.ts`**: API interaction logic (already set up).
 - **`models/pokemon.ts`**: Type definitions for Pokémon data.
 - **Routes**:
-  - `/`: Displays a list of Pokémon.
+  - `/`: Displays a list of Regions.
+  - `/:region`: Displays a list of Pokémon from that region.
   - `/pokemon/:name`: Displays details for a selected Pokémon.
 
 ### Setting Up React Query
